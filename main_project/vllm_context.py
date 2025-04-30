@@ -4,7 +4,7 @@ import pandas as pd
 from tqdm import tqdm
 from vllm import LLM, SamplingParams
 import sys
-common_dir = "/data/wangj47/script/annote/"
+common_dir = "/*/script/annote/"
 sys.path.append(common_dir)
 from common.utils import read_file, write_file
 
@@ -13,10 +13,10 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"  # Adjust based on available GPUs
 os.environ["NCCL_P2P_DISABLE"] = "1"  # Disable NCCL Peer-to-Peer communication
 
 # Model path and directories
-model_path = "/data/wangj47/model/llama-3.1-8b-instruct"
-notes_dir = '/data/wangj47/mimic4/notes'
-chunk_dir = '/data/wangj47/mimic4/org_chunks'
-output_dir = '/data/wangj47/mimic4/context_chunks'
+model_path = "/*/model/llama-3.1-8b-instruct"
+notes_dir = '/*/mimic4/notes'
+chunk_dir = '/*/mimic4/org_chunks'
+output_dir = '/*/mimic4/context_chunks'
 os.makedirs(output_dir, exist_ok=True)
 
 # Define the prompt template
