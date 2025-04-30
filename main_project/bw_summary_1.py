@@ -8,17 +8,17 @@ import sys
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from accelerate import Accelerator
-common_dir = "/data/wangj47/script/annote/"
+common_dir = "/*/script/annote/"
 sys.path.append(common_dir)
 from common.utils import read_file, clean_text_mimic, write_file
 
 # Initialize Accelerator
 accelerator = Accelerator()
 # Directories
-model_dir = '/data/wangj47/model/llama-3.1-8b-instruct'
-notes_dir = '/data/wangj47/mimic4/notes'
+model_dir = '/*/model/llama-3.1-8b-instruct'
+notes_dir = '/*/mimic4/notes'
 notes_files = os.listdir(notes_dir)
-summary_dir = '/data/wangj47/mimic4/summary-8B'
+summary_dir = '/*/mimic4/summary-8B'
 os.makedirs(summary_dir, exist_ok=True)
 existing_summaries = set(os.listdir(summary_dir))  # List of completed summaries
 notes_files = [f for f in notes_files if f"{os.path.splitext(f)[0]}_summary.txt" not in existing_summaries]
