@@ -96,10 +96,10 @@ num_epochs = 3
 batch_size = 16
 
 for fold in range(10):  # Iterate over pqal_fold0 to pqal_fold9
-    pubmedqa_td = f'/data/wangj47/datasets/pubmedqa/data/pqal_fold{fold}'
+    pubmedqa_td = f'/*/datasets/pubmedqa/data/pqal_fold{fold}'
 
     # Load test set
-    with open('/data/wangj47/datasets/pubmedqa/data/test_set.json') as f:
+    with open('/*/datasets/pubmedqa/data/test_set.json') as f:
         data = json.load(f)
     all_test_samples = get_samples_data(data)
 
