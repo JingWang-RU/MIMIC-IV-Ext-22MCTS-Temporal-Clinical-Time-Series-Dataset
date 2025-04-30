@@ -14,7 +14,7 @@ This repository contains:
 
 ## 📁 Project Structure
 
-. ├── data/ # physionet.com ├── postannote_.py # Python scripts for downstream tasks (e.g., prediction, evaluation) ├── run_.sbatch # SLURM job scripts for HPC environment ├── llm_generation/ # LLM interaction code (e.g., prompt building, model inference) ├── utils/ # Utility functions and helpers ├── 
+. ├── data/ # physionet.com ├── postannote_.py # Python scripts for downstream tasks (e.g., prediction, evaluation) ├── run_.sbatch # SLURM job scripts for HPC environment ├── annotation # LLM interaction code (e.g., prompt building, model inference) 
 
 ## 📊 Dataset Description
 
