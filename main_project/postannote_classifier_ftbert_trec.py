@@ -300,7 +300,7 @@ class MyModel(nn.Module):
 
 # ========== Example Data Loading Process ==========
 if __name__ == "__main__":
-    path = "/data/wangj47/datasets/TrialGPT/dataset/sigir/data/"
+    path = "/*/datasets/TrialGPT/dataset/sigir/data/"
 
     # 1) Parse topics -> query_dict
     query_dict = parse_topics(os.path.join(path, "topics-2014_2015-description.topics"))
@@ -343,7 +343,7 @@ if __name__ == "__main__":
 
     # Load pretrained weights
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model_directory = "/data/wangj47/script/annote/result/models/bert0124"  # Adjust the path
+    model_directory = "/*/script/annote/result/models/bert0124"  # Adjust the path
     checkpoint_file = 'bert_gpus_best_model_with_time.bin'
     base_model, classifier_head = load_local_bert_and_classifier(model_directory, checkpoint_file, device=device)
     
@@ -404,7 +404,7 @@ if __name__ == "__main__":
     # If you have a separate test set or dev set, you can replicate
     # the above logic with base_model.eval() & classifier_head.eval(), 
     # collect predictions, then compute accuracy or F1.
-    model_path = "/data/wangj47/checkpoints/trail/0226classifier_ft_bert/"
+    model_path = "/*/checkpoints/trail/0226classifier_ft_bert/"
     # Save model
     torch.save(base_model.state_dict(), model_path + "bert_base_model_classification.pt")
     torch.save(classifier_head.state_dict(), model_path + "classifier_head_classification.pt")
@@ -414,7 +414,7 @@ if __name__ == "__main__":
     print("inference")
     # inference
     # 1) Load the model
-    # model_path = "/data/wangj47/checkpoints/trail/0226classifier_bert/"
+    # model_path = "/*/checkpoints/trail/0226classifier_bert/"
     # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     # base_model, classifier_head = load_bert_and_classifier(
@@ -429,7 +429,7 @@ if __name__ == "__main__":
     
     # 2) Inference loop
     
-    result_path = "/data/wangj47/script/annote/annote_app/trail/dataset/trec_2021/"
+    result_path = "/*/script/annote/annote_app/trail/dataset/trec_2021/"
     qrel_path = result_path + "qrels/test.tsv"
     qrel = {}
     with open(qrel_path, "r", encoding="utf-8") as f:
@@ -521,7 +521,7 @@ if __name__ == "__main__":
 # Reading doc 0/3626: NCT00000408
 # Reading doc 2000/3626: NCT02241044
 # Total training samples: 3870
-# /home/wangj47/.local/lib/python3.9/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+# /home/*/.local/lib/python3.9/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
 #   warnings.warn(
 # Epoch 1/3 - Training: 100%|██████████| 242/242 [00:22<00:00, 10.84it/s]
 # Epoch 1/3, Train Loss: 0.9182
