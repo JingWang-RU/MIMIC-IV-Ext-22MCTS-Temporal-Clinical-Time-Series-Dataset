@@ -300,7 +300,7 @@ class MyModel(nn.Module):
 
 # ========== Example Data Loading Process ==========
 if __name__ == "__main__":
-    path = "/data/wangj47/datasets/TrialGPT/dataset/sigir/data/"
+    path = "/*/datasets/TrialGPT/dataset/sigir/data/"
 
     # 1) Parse topics -> query_dict
     query_dict = parse_topics(os.path.join(path, "topics-2014_2015-description.topics"))
@@ -397,7 +397,7 @@ if __name__ == "__main__":
     # If you have a separate test set or dev set, you can replicate
     # the above logic with base_model.eval() & classifier_head.eval(), 
     # collect predictions, then compute accuracy or F1.
-    model_path = "/data/wangj47/checkpoints/trail/0226classifier_ft_bert/"
+    model_path = "/*/checkpoints/trail/0226classifier_ft_bert/"
     # Save model
     torch.save(base_model.state_dict(), model_path + "bert_base_model_classification.pt")
     torch.save(classifier_head.state_dict(), model_path + "classifier_head_classification.pt")
@@ -407,7 +407,7 @@ if __name__ == "__main__":
     print("inference")
     # inference
     # 1) Load the model
-    # model_path = "/data/wangj47/checkpoints/trail/0226classifier_bert/"
+    # model_path = "/*/checkpoints/trail/0226classifier_bert/"
     # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     # base_model, classifier_head = load_bert_and_classifier(
@@ -422,7 +422,7 @@ if __name__ == "__main__":
     
     # 2) Inference loop
     
-    result_path = "/data/wangj47/script/annote/annote_app/trail/dataset/trec_2021/"
+    result_path = "/*/script/annote/annote_app/trail/dataset/trec_2021/"
     qrel_path = result_path + "qrels/test.tsv"
     qrel = {}
     with open(qrel_path, "r", encoding="utf-8") as f:
