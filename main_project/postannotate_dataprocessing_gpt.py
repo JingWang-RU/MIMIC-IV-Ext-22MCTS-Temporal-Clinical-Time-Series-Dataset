@@ -113,7 +113,7 @@ if __name__ == "__main__":
     empty_df = pd.read_csv(os.path.join(result_path,"empty_files.csv"))#, index=False)
     empty_files = empty_df['emptyfiles'].values
 
-    data_directory = '/data/wangj47/mimic4/combined_bm_emb_annotate' # Replace with your actual path
+    data_directory = '/*/mimic4/combined_bm_emb_annotate' # Replace with your actual path
     # Consolidate data
     # master_df = consolidate_data(data_directory, empty_files, num_processes=16)  # Adjust based on your CPU cores
     # master_df = master_df.dropna(subset=['Time'])
