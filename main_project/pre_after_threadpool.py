@@ -4,8 +4,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
 # Directories
-org_chunks = "/data/wangj47/mimic4/org_chunks"
-context_preaft_chunks = "/data/wangj47/mimic4/pre_aft_context_chunks"
+org_chunks = "/*/mimic4/org_chunks"
+context_preaft_chunks = "/*/mimic4/pre_aft_context_chunks"
 os.makedirs(context_preaft_chunks, exist_ok=True)
 
 # List all files in the directory
