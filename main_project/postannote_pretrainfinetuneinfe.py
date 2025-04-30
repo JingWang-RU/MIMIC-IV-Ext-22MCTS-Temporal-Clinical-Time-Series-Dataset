@@ -129,9 +129,9 @@ def eval_model(model, data_loader, criterion, device):
 # ===== 9. Main Execution =====
 if __name__ == "__main__":
     # Define the data directory
-    result_directory = "/data/wangj47/script/annote/result/train_clean"
-    figure_directory = "/data/wangj47/script/annote/result/figures"
-    model_directory = "/data/wangj47/script/annote/result/models/bert_batch2046"
+    result_directory = "/*/script/annote/result/train_clean"
+    figure_directory = "/*/script/annote/result/figures"
+    model_directory = "/*/script/annote/result/models/bert_batch2046"
     os.makedirs(model_directory, exist_ok=True) 
     with open(os.path.join(result_directory,'event_pairs.pkl'), 'rb') as f:
         event_pairs = pickle.load(f)
