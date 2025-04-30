@@ -108,8 +108,8 @@ def convert_id_to_text(df_subset):
 # ===== 5. Example Usage =====
 if __name__ == "__main__":
     # Define the data directory
-    result_path = '/data/wangj47/script/annote/result/train_clean'
-    save_directory = '/data/wangj47/script/annote/result/train_clean/gptpretrain'
+    result_path = '/*/script/annote/result/train_clean'
+    save_directory = '/*/script/annote/result/train_clean/gptpretrain'
     empty_df = pd.read_csv(os.path.join(result_path,"empty_files.csv"))#, index=False)
     empty_files = empty_df['emptyfiles'].values
 
