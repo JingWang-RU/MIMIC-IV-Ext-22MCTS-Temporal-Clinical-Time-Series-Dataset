@@ -5,15 +5,16 @@
 **MIMIC-IV-22MCTS** is a large-scale temporal clinical dataset constructed from the MIMIC-IV database, featuring **22 million clinical events** annotated with **relative timestamps**. The dataset enables a wide range of temporal clinical modeling, including patient trajectory modeling, clinical event prediction, and time-sensitive language modeling.
 
 Please kindly consider cite our work if you feel the dataset is useful, thank you so much for your interest, best luck to your project:
-Wang, J., Niu, X., Zhang, T., Shen, J., Kim, J., & Weiss, J. (2025). 
+
+- Wang, J., Niu, X., Zhang, T., Shen, J., Kim, J., & Weiss, J. (2025). 
  MIMIC-IV-Ext-22MCTS: A 22 Millions-Event Temporal Clinical Time-Series Dataset with Relative Timestamp 
  (version 1.0.0). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/dkj6-r828
- @article{wang2025mimic,
-   title={MIMIC-$\backslash$RNum $\{$4$\}$-Ext-22MCTS: A 22 Millions-Event Temporal Clinical Time-Series Dataset with Relative Timestamp for Risk Prediction},
-   author={Wang, Jing and Niu, Xing and Kim, Juyong and Shen, Jie and Zhang, Tong and Weiss, Jeremy C},
-   journal={arXiv preprint arXiv:2505.00827},
-  year={2025}
- }
+- @article{wang2025mimic,
+   - title={MIMIC-$\backslash$RNum $\{$4$\}$-Ext-22MCTS: A 22 Millions-Event Temporal Clinical Time-Series Dataset with Relative Timestamp for Risk Prediction},
+   - author={Wang, Jing and Niu, Xing and Kim, Juyong and Shen, Jie and Zhang, Tong and Weiss, Jeremy C},
+   - journal={arXiv preprint arXiv:2505.00827},
+  - year={2025}
+ - }
 
 
 This repository contains:
